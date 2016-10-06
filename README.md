@@ -8,9 +8,9 @@ Created by modifying <a href="https://github.com/mixmaxhq/giphy-example-link-res
 ## Running locally
 
 1. Install using `npm install`
-2. Run using `npm start`
+2. Run using `npm start` (the server runs on port 9147 by default)
 
-To simulate locally how Mixmax calls the resolver URL (to return HTML that goes into the email), run:
+To simulate locally how Mixmax calls the resolver URL (to return HTML that goes into the email), use the regex ```amazon\.com/.*/\w*/\w*/.*$``` when setting up the link resolver and run:
 
 ```
 curl http://localhost:9147/resolver?url=https%3A%2F%2Fwww.amazon.com%2FMagswitch-MAGJIG-95-MagJig%2Fdp%2FB003FWERRC%2F
